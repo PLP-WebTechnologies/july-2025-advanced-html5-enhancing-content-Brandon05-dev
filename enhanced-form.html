@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="An enhanced HTML5 page with lists, tables, media, and a complete accessible form with built-in validation."/>
+  <title>Enhanced HTML5 Form Page</title>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Example Page</h1>
+    <p>This page demonstrates lists, tables, embedded media, and a fully featured HTML5 form with validation.</p>
+  </header>
+
+  <!-- Section: Using a list -->
+  <section>
+    <h2>Features</h2>
+    <ul>
+      <li>Semantic HTML5 structure</li>
+      <li>Accessible design with labels and fieldsets</li>
+      <li>Media integration: image, audio, and video</li>
+      <li>Built-in HTML5 form validation</li>
+    </ul>
+  </section>
+
+  <!-- Section: Using a table -->
+  <section>
+    <h2>Top Programming Languages</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Language</th>
+          <th>Primary Use</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML5</td>
+          <td>Markup for web pages</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Styling and layout</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Interactivity and dynamic content</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section: Embedding media -->
+  <section>
+    <h2>Media Examples</h2>
+    <h3>Image</h3>
+    <img src="C:\Users\admin\Downloads\pexels-alexandre-moreira-2527876-33164259.jpg" alt="An example placeholder image" width="300" />
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="example-audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <video width="400" controls poster="thumbnail.jpg">
+      <source src="https://www.youtube.com/watch?v=6uLrHLDzQwE" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Section: Complete HTML5 form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required autocomplete="name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email" />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"
+          pattern="^(\+254|0)?7\d{8}$"
+          placeholder="+2547XXXXXXXX"
+          required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" minlength="4" placeholder="Username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" required />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="referral">Referral Code:</label>
+        <input type="text" id="referral" name="referral" value="REF12345" readonly />
+      </fieldset>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enhanced HTML5 Example. All rights reserved.</p>
+  </footer>
+</body>
+</html>
